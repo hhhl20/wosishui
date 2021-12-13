@@ -1,0 +1,80 @@
+
+/* 整体盒子居中对齐 */
+body {
+    display: flex;
+
+    justify-content: center;
+}
+
+/* 对整体盒子设置样式 */
+.todolist-panel {
+    width: 20em;
+    min-height: 25em;
+    border: 1px solid rgb(156, 190, 159)k;
+    box-shadow: 2px 2px 2px rgb(156, 190, 159);
+    padding: 2px 2px;
+    background-image: url(images/图一.jpg);
+
+}
+
+/* 对标题设置样式 */
+h1 {
+    text-align: center;
+    color: rgb(156, 190, 159);
+}
+
+/* 对输入框设置样式 */
+.input-pane {
+    display: flex;
+}
+
+.input-pane, .list-pane {
+    padding: 5px 1em;
+    text-align: center;
+    background: rgb(156, 190, 159,0.3);
+    color: #ffffff;
+}
+/*  flex语法：flex-grow(扩展量)、flex-shrink(收缩量)、flex-basis(项目的长度) */
+.input-pane > input {
+    flex: 1 1 8em;
+}
+
+/* 对列表框设置样式 */
+.list-pane > .todo-item {
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.list-pane > .todo-item > .title {
+    flex: 1 1 8em;
+}
+
+/* 设置重要提示！的样式 */
+.important-flag {
+    width: 1.5em;
+    text-align: center;
+    border: 1px solid rgb(51, 119, 24);
+    color: rgb(51, 119, 24);
+    font-size: 1em;
+    font-weight: 900;
+
+    user-select: none;
+}
+
+.important-flag.open {
+    color: red
+}
+
+
+.input-pane  #his-btn.open {
+    background-color: rgb(219, 149, 122);
+}
+
+/* 对按钮设置样式 */
+button {
+    background:rgb(220, 238, 221)
+    padding = 0;
+    border:1px solid rgb(51, 119, 24);
+    cursor: pointer;
+}
+
