@@ -1,0 +1,37 @@
+
+/* 标签选择器 */
+/* 移动盒子到中间 */
+body {
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+}
+/* 类选择器 */
+.todolist {
+    width: 20em;
+    min-height: 25em;
+    border: 1px solid pink;
+    box-shadow: 2px 2px 2px rgb(230, 193, 193);
+    padding: 2px 2px;
+    background-image: url(images/图一.jpg);
+
+}
+
+.input {
+    display: flex;
+    padding: 5px 1em;
+}
+
+/* id选择器 */
+#myInput {
+    border: 1px solid #555555;
+    color: #303b38;
+    font-family:微软雅黑;
+}
+
+
+
