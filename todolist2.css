@@ -78,3 +78,6 @@ button {
     cursor: pointer;
 }
 
+.todo-item:hover {
+    color:rgb(219, 149, 122)
+}
