@@ -68,6 +68,8 @@ function renderTodoItemList(todoItems, finishedItems) {
         /* 创建一个button标签，改变标签中文本样式为X */
         let deleteBtn = document.createElement("button");
         deleteBtn.innerText = "X";
+        deleteBtn.className = "del-btn";
+
         /* 当点击X按钮时则执行下列函数 */
         deleteBtn.addEventListener("click",(e) => {
             setTimeout(() =>{
@@ -144,6 +146,8 @@ function renderInputPane(todoItems) {
             isFinished: false,
             isImportance: false, 
         })
+        /* 点击添加按钮后将输入框的内容清除 */
+        inputEl.value = "";
         
         /* 输出结果 */
         console.log("add a item: ", inputEl.value);
@@ -166,5 +170,6 @@ function renderInputPane(todoItems) {
     // let btnEl = document.querySelector("#todolist #add-btn");
 }
 
+/* 执行程序 */
 renderInputPane(todoItems, finishedItems);
 renderTodoItemList(todoItems, finishedItems);

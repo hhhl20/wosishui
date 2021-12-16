@@ -10,7 +10,7 @@ body {
 .todolist-panel {
     width: 20em;
     min-height: 25em;
-    border: 1px solid rgb(156, 190, 159)k;
+    border: 1px solid rgb(156, 190, 159);
     box-shadow: 2px 2px 2px rgb(156, 190, 159);
     padding: 2px 2px;
     background-image: url(images/图一.jpg);
@@ -33,6 +33,7 @@ h1 {
     text-align: center;
     background: rgb(156, 190, 159,0.3);
     color: #ffffff;
+    font: "宋体";
 }
 /*  flex语法：flex-grow(扩展量)、flex-shrink(收缩量)、flex-basis(项目的长度) */
 .input-pane > input {
@@ -80,4 +81,18 @@ button {
 
 .todo-item:hover {
     color:rgb(219, 149, 122)
+}
+
+#add-btn {
+    background: rgb(220, 238, 221);
+
+}
+#his-btn {
+    background: rgb(220, 238, 221);
+
+}
+
+.del-btn {
+    background: rgb(220, 238, 221);
+
 }
