@@ -14,7 +14,7 @@ function renderTodoItemList(todoItems, finishedItems) {
         let item = todoItems[i];
         /* 在itemDiv中创建一个div */
         let itemDiv = document.createElement("div");
-        /* 改变标签元素的css类选择器，从list-pane变为todo-item */
+        /* 将新建的div标签赋予一个类名 */
         itemDiv.className = "todo-item";
 
         let inputEl = document.createElement("input");
@@ -38,6 +38,11 @@ function renderTodoItemList(todoItems, finishedItems) {
         let titleEl = document.createElement("div");
         /* 获取class属性 */
         titleEl.className = "title";
+        titleEl.contentEditable = "true"
+        titleEl.addEventListener("input",(e) =>{
+            todoItems[i].title = titleEl.innerText
+            console.log(todoItems)
+        })
         
         /* 创建一个div标签，用来装！（表示重要） */
         let importanceEl = document.createElement("div");

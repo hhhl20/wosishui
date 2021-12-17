@@ -33,7 +33,6 @@ h1 {
     text-align: center;
     background: rgb(156, 190, 159,0.3);
     color: #ffffff;
-    font: "宋体";
 }
 /*  flex语法：flex-grow(扩展量)、flex-shrink(收缩量)、flex-basis(项目的长度) */
 .input-pane > input {
@@ -80,7 +79,8 @@ button {
 }
 
 .todo-item:hover {
-    color:rgb(219, 149, 122)
+    color:rgb(219, 149, 122);
+    background: rgb(185, 223, 184)
 }
 
 #add-btn {
