@@ -139,15 +139,19 @@ function renderInputPane(todoItems) {
     addBtnEl.addEventListener("click", (e)=>{
         /* 获取input的内容 */
         let inputEl = inputPaneEl.querySelector("input");
-
-        /* 将里面的内容，是否完成的情况和是否重要全部都放在todoItem中 */
-        todoItems.push({
-            title: inputEl.value,
-            isFinished: false,
-            isImportance: false, 
-        })
-        /* 点击添加按钮后将输入框的内容清除 */
-        inputEl.value = "";
+        /* 如果输入的内容为空，则弹出弹窗，反之输入 */
+        if(inputEl.value === ""){
+            alert("请输入待办事项内容")
+        }else{
+            /* 将里面的内容，是否完成的情况和是否重要全部都放在todoItem中 */ 
+            todoItems.push({
+                title: inputEl.value,
+                isFinished: false,
+                isImportance: false,
+            })
+            /* 点击添加按钮后将输入框的内容清除 */
+            inputEl.value = "";
+        }
         
         /* 输出结果 */
         console.log("add a item: ", inputEl.value);
